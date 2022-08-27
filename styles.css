@@ -318,7 +318,7 @@ body {
       );
   }
 }
-@media all and(orientation:landscape)    {
+@media all and (orientation:landscape)    {
   :root {
     --building-color1: #000; /*redefine the variables for this condition*/
     --building-color2: #000;
