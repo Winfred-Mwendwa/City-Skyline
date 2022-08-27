@@ -1,3 +1,25 @@
+* { @media all and (orientation:landscape)    {
+  :root {
+    --building-color1: #000; /*redefine the variables for this condition*/
+    --building-color2: #000;
+    --building-color3: #000;
+    --building-color4: #000;
+    --window-color1:#777;
+    --window-color2:#777;
+    --window-color3:#777;
+    --window-color4:#777;
+  }
+  .sky {
+    background: radial-gradient(
+        closest-corner circle at 15% 15%,
+        #ccc,
+        #ccc 20%,
+        #445 21%,
+        #223 100%
+      );
+  }
+}
+}
 :root {
   --building-color1: #aa80ff; /*to enable variables to be used anywhere within the code, they must be declared in the root element*/
   --building-color2: #66cc99; /*it's good practice to use variables as they make the code easier to maintain and reuse*/
@@ -298,27 +320,6 @@ body {
 }
 
 @media (max-width: 1000px) { /*this media querry is used to change the skyline from day to night when the size of the window is adjusted*/
-  :root {
-    --building-color1: #000; /*redefine the variables for this condition*/
-    --building-color2: #000;
-    --building-color3: #000;
-    --building-color4: #000;
-    --window-color1:#777;
-    --window-color2:#777;
-    --window-color3:#777;
-    --window-color4:#777;
-  }
-  .sky {
-    background: radial-gradient(
-        closest-corner circle at 15% 15%,
-        #ccc,
-        #ccc 20%,
-        #445 21%,
-        #223 100%
-      );
-  }
-}
-@media all and (orientation:landscape)    {
   :root {
     --building-color1: #000; /*redefine the variables for this condition*/
     --building-color2: #000;
